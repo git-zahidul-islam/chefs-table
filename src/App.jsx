@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './Components/Banner/Banner'
+import CookData from './Components/CookData/CookData'
 import Header from './Components/Header/Header'
 import Recipes from './Components/Recipes/Recipes'
 
@@ -21,8 +22,9 @@ function App() {
           <div className='lg:w-3/5 w-full'>
             <Recipes></Recipes>
           </div>
-          {/* <div className='lg:w-2/5 w-full border-2'><h1>by</h1></div> */}
-          
+          <div className='lg:w-2/5 w-full border-2 rounded-2xl'>
+            <CookData></CookData>
+          </div>
         </div>
       </div>
 
