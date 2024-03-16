@@ -1,0 +1,91 @@
+[
+    {
+        "recipe_id": 1,
+        "recipe_image": "https://i.ibb.co/dfn7WRc/zoran-borojevic-5-FECW242og-unsplash.jpg",
+        "recipe_name": "Spaghetti Carbonara",
+        "short_description": "Classic Italian pasta dish with eggs, cheese, pancetta, and black pepper.",
+        "recipe_ingredients": [
+            "200g Spaghetti",
+            "3 Eggs",
+            "150g Pancetta",
+            "50g Parmesan Cheese",
+            "1 Black Pepper"
+        ],
+        "preparing_time": "30 minutes",
+        "calories": "450 calories"
+    },
+    {
+        "recipe_id": 2,
+        "recipe_image": "https://i.ibb.co/Z1RYSGb/Grilled-Salmon.jpg",
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Juicy salmon fillets marinated in lemon, garlic, and herbs, then grilled to perfection.",
+        "recipe_ingredients": [
+            "4 Salmon Fillets",
+            "1 Lemon",
+            "2 cloves Garlic",
+            "2 tbsp Olive Oil",
+            "1 tbsp Herbs"
+        ],
+        "preparing_time": "25 minutes",
+        "calories": "320 calories"
+    },
+    {
+        "recipe_id": 3,
+        "recipe_image": "https://i.ibb.co/Yc7PhH9/Caprese-Salad.jpg",
+        "recipe_name": "Caprese Salad",
+        "short_description": "Fresh and vibrant salad made with ripe tomatoes, mozzarella cheese, basil, and balsamic glaze.",
+        "recipe_ingredients": [
+            "3 Tomatoes",
+            "200g Fresh Mozzarella",
+            "1 bunch Basil Leaves",
+            "2 tbsp Balsamic Glaze"
+        ],
+        "preparing_time": "15 minutes",
+        "calories": "250 calories"
+    },
+    {
+        "recipe_id": 4,
+        "recipe_image": "https://i.ibb.co/qpmKLTr/Chicken-Pasta.jpg",
+        "recipe_name": "Chicken Pasta",
+        "short_description": "Creamy pasta dish with tender chicken, garlic, parmesan cheese, and rich Alfredo sauce.",
+        "recipe_ingredients": [
+            "400g Chicken Breast",
+            "300g Fettuccine Pasta",
+            "1 cup Heavy Cream",
+            "3 cloves Garlic",
+            " 100 g Cheese"
+        ],
+        "preparing_time": "40 minutes",
+        "calories": "580 calories"
+    },
+    {
+        "recipe_id": 5,
+        "recipe_image": "https://i.ibb.co/wNSP27C/Vegetable-Stir-Fry.jpg",
+        "recipe_name": "Vegetable Stir-Fry",
+        "short_description": "Colorful medley of fresh vegetables stir-fried in a savory soy sauce.",
+        "recipe_ingredients": [
+            "1 pice Broccoli",
+            "2 Bell Peppers",
+            "2 Carrots",
+            "100 g Snow Peas",
+            "3 pice Soy Sauce"
+        ],
+        "preparing_time": "20 minutes",
+        "calories": "200 calories"
+    },
+    {
+        "recipe_id": 6,
+        "recipe_image": "https://i.ibb.co/bmHnwY9/Mushroom-Risotto.jpg",
+        "recipe_name": "Mushroom Risotto",
+        "short_description": "Creamy Italian rice dish cooked with mushrooms, onions, white wine, and parmesan cheese.",
+        "recipe_ingredients": [
+            "1 cup - Arborio Rice",
+            "200 g  Mushrooms",
+            "1 pice Onion",
+            "1 cup White Wine",
+            "50 g Cheese"
+        ],
+        "preparing_time": "35 minutes",
+        "calories": "380 calories"
+    }
+]
