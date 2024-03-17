@@ -10,8 +10,6 @@ function App() {
 
   const handleCook = (cook) => {
     const isExist = cooks.find((c) => c.id == cook.id)
-    console.log(isExist)
-
     if(!isExist){
       setCooks([...cooks,cook])
     }
