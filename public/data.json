@@ -1,6 +1,6 @@
 [
     {
-        "recipe_id": 1,
+        "id": 1,
         "recipe_image": "https://i.ibb.co/dfn7WRc/zoran-borojevic-5-FECW242og-unsplash.jpg",
         "recipe_name": "Spaghetti Carbonara",
         "short_description": "Classic Italian pasta dish with eggs, cheese, pancetta, and black pepper.",
@@ -15,7 +15,7 @@
         "calories": "450 calories"
     },
     {
-        "recipe_id": 2,
+        "id": 2,
         "recipe_image": "https://i.ibb.co/Z1RYSGb/Grilled-Salmon.jpg",
         "recipe_name": "Grilled Salmon",
         "short_description": "Juicy salmon fillets marinated in lemon, garlic, and herbs, then grilled to perfection.",
@@ -30,7 +30,7 @@
         "calories": "320 calories"
     },
     {
-        "recipe_id": 3,
+        "id": 3,
         "recipe_image": "https://i.ibb.co/Yc7PhH9/Caprese-Salad.jpg",
         "recipe_name": "Caprese Salad",
         "short_description": "Fresh and vibrant salad made with ripe tomatoes, mozzarella cheese, basil, and balsamic glaze.",
@@ -44,7 +44,7 @@
         "calories": "250 calories"
     },
     {
-        "recipe_id": 4,
+        "id": 4,
         "recipe_image": "https://i.ibb.co/qpmKLTr/Chicken-Pasta.jpg",
         "recipe_name": "Chicken Pasta",
         "short_description": "Creamy pasta dish with tender chicken, garlic, parmesan cheese, and rich Alfredo sauce.",
@@ -59,7 +59,7 @@
         "calories": "580 calories"
     },
     {
-        "recipe_id": 5,
+        "id": 5,
         "recipe_image": "https://i.ibb.co/wNSP27C/Vegetable-Stir-Fry.jpg",
         "recipe_name": "Vegetable Stir-Fry",
         "short_description": "Colorful medley of fresh vegetables stir-fried in a savory soy sauce.",
@@ -74,7 +74,7 @@
         "calories": "200 calories"
     },
     {
-        "recipe_id": 6,
+        "id": 6,
         "recipe_image": "https://i.ibb.co/bmHnwY9/Mushroom-Risotto.jpg",
         "recipe_name": "Mushroom Risotto",
         "short_description": "Creamy Italian rice dish cooked with mushrooms, onions, white wine, and parmesan cheese.",

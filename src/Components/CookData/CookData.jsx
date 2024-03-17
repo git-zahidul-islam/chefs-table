@@ -1,13 +1,17 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
+import Cook from "../Cook/Cook";
 
 
-const CookData = () => {
-    
+const CookData = ({ cooks }) => {
+    console.log(cooks)
+
     return (
         <div>
             <div className="space-y-5">
-                <h1 className="text-2xl font-semibold text-center mt-4">Want to cook: </h1>
+                <h1 className="text-2xl font-semibold text-center mt-4">Want to cook: {cooks.length}</h1>
                 <div className="flex justify-center"><hr className="w-3/5" /></div>
+
                 <table className="w-full">
                     <tbody>
                         <tr className="">
@@ -17,18 +21,16 @@ const CookData = () => {
                             <th className="py-5">Calories</th>
                             <th className="py-5"></th>
                         </tr>
-                        <tr className="text-center bg-slate-200">
-                            <td>1</td>
-                            <td className="py-5">banana</td>
-                            <td className="py-5">20 min</td>
-                            <td className="py-5">120 cal</td>
-                            <td className="py-5"><button className="bg-green-500 rounded-full py-2 px-3">Preparing</button></td>
-                        </tr>
                     </tbody>
-                    
                 </table>
+
+                <div>
+                    {
+                        cooks.map((cook, idx) => <Cook key={idx} cook={cook}></Cook>)
+                    }
+                </div>
             </div>
-            
+
             <div className="space-y-5">
                 <h1 className="text-2xl font-semibold text-center mt-4">Currently cooking: 02</h1>
                 <div className="flex justify-center"><hr className="w-3/5" /></div>
@@ -51,7 +53,7 @@ const CookData = () => {
                             <td className="py-5">120 cal</td>
                         </tr>
                     </tbody>
-                    
+
                 </table>
             </div>
         </div>
@@ -59,7 +61,7 @@ const CookData = () => {
 };
 
 CookData.propTypes = {
-
+    cooks: PropTypes.array.isRequired
 };
 
 export default CookData;

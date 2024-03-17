@@ -3,7 +3,7 @@ import IngItem from '../IngItem/IngItem';
 import { IoMdTime } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleCook }) => {
     // console.log("recipe code", recipe)
     const { recipe_name, recipe_image, short_description, recipe_ingredients, preparing_time, calories } = recipe;
 
@@ -33,7 +33,7 @@ const Recipe = ({ recipe }) => {
                         <p>{calories}</p>
                     </div>
                 </div>
-                <button className='bg-green-400 border-none rounded-full p-3'>Want To Cook</button>
+                <button onClick={() =>handleCook(recipe)} className='bg-green-400 border-none rounded-full p-3'>Want To Cook</button>
             </div>
         </div>
     );

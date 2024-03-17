@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Recipe from "../Recipe/Recipe";
 
-const Recipes = () => {
+const Recipes = ({ handleCook }) => {
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
@@ -27,6 +27,7 @@ const Recipes = () => {
                 {
                     recipes.map((recipe, index) => <Recipe
                         key={index} recipe={recipe}
+                        handleCook={handleCook}
                         
                     ></Recipe>)
                 }
