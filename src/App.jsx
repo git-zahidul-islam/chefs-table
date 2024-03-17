@@ -5,7 +5,6 @@ import Header from './Components/Header/Header'
 import Recipes from './Components/Recipes/Recipes'
 
 function App() {
-
   return (
     <>
       <div className='lg:w-11/12 md:w-11/12 w-full mx-auto lg:px-0 md:px-0 px-1 space-y-8'>
@@ -20,10 +19,10 @@ function App() {
         {/* recipe & cook */}
         <div className='flex lg:flex-row flex-col p-2 lg:gap-4 md:gap-3 gap-1'>
           <div className='lg:w-3/5 w-full'>
-            <Recipes></Recipes>
+            <Recipes ></Recipes>
           </div>
           <div className='lg:w-2/5 w-full border-2 rounded-2xl'>
-            <CookData></CookData>
+            <CookData ></CookData>
           </div>
         </div>
       </div>

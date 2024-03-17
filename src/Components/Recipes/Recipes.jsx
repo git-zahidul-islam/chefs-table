@@ -25,7 +25,10 @@ const Recipes = () => {
             {/* <h1>Recipe: {recipes.length}</h1> */}
             <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
                 {
-                    recipes.map((recipe, index) => <Recipe key={index} recipe={recipe}></Recipe>)
+                    recipes.map((recipe, index) => <Recipe
+                        key={index} recipe={recipe}
+                        
+                    ></Recipe>)
                 }
             </div>
         </div>

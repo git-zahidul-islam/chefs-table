@@ -4,7 +4,7 @@ import { IoMdTime } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 
 const Recipe = ({ recipe }) => {
-    console.log("recipe code", recipe)
+    // console.log("recipe code", recipe)
     const { recipe_name, recipe_image, short_description, recipe_ingredients, preparing_time, calories } = recipe;
 
     return (
