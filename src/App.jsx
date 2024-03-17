@@ -19,9 +19,6 @@ function App() {
     else{
       toast.error("Don't Double click")
     }
-
-    // const newCooks = [...cooks,cook]
-    // setCooks(newCooks)
   }
 
 

@@ -10,10 +10,19 @@ const CookData = ({ cooks }) => {
     const [cooking, setCooking] = useState([]);
 
 
-    const handleCooking = (cookItem) => {
+    const handleCooking = (id,cookItem) => {
         console.log(cooking)
         setCooking([...cooking, cookItem])
+        // removing data
+        // console.log('remove data',id)
+        // const remainingCook = cooking.filter(cook => cook.id !== id)
+        // console.log(remainingCook)
+        // setCooking(remainingCook)
+
+        
     }
+
+
 
     return (
         <div>
@@ -36,7 +45,7 @@ const CookData = ({ cooks }) => {
                 <div>
                     {
                         cooks.map((cook, idx) => <Cook
-                            key={idx} cook={cook} handleCooking={handleCooking}
+                            key={idx} cook={cook} index={idx} handleCooking={handleCooking}
                         ></Cook>)
                     }
                 </div>
@@ -60,6 +69,7 @@ const CookData = ({ cooks }) => {
                         cooking.map((cookPrepare, index) => <Cooking
                             key={index}
                             cookPrepare={cookPrepare}
+                            index={index}
                         ></Cooking>)
                     }
                 </div>

@@ -40,7 +40,8 @@ const Recipe = ({ recipe, handleCook }) => {
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.object.isRequired
+    recipe: PropTypes.object.isRequired,
+    handleCook: PropTypes.func.isRequired
 };
 
 export default Recipe;
