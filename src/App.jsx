@@ -5,6 +5,9 @@ import CookData from './Components/CookData/CookData'
 import Header from './Components/Header/Header'
 import Recipes from './Components/Recipes/Recipes'
 
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const [cooks,setCooks] = useState([])
 
@@ -14,7 +17,7 @@ function App() {
       setCooks([...cooks,cook])
     }
     else{
-      alert('you cant click')
+      toast.error("Don't Double click")
     }
 
     // const newCooks = [...cooks,cook]
