@@ -1,29 +1,9 @@
 import PropTypes from 'prop-types';
 
 import Cook from "../Cook/Cook";
-import { useState } from 'react';
 import Cooking from '../Cooking/Cooking';
 
-
-const CookData = ({ cooks }) => {
-    console.log(cooks)
-    const [cooking, setCooking] = useState([]);
-
-
-    const handleCooking = (id,cookItem) => {
-        console.log(cooking)
-        setCooking([...cooking, cookItem])
-        // removing data
-        // console.log('remove data',id)
-        // const remainingCook = cooking.filter(cook => cook.id !== id)
-        // console.log(remainingCook)
-        // setCooking(remainingCook)
-
-        
-    }
-
-
-
+const CookData = ({ cooks, handleCooking, cooking }) => {
     return (
         <div>
             <div className="space-y-5">
@@ -44,8 +24,11 @@ const CookData = ({ cooks }) => {
 
                 <div>
                     {
-                        cooks.map((cook, idx) => <Cook
-                            key={idx} cook={cook} index={idx} handleCooking={handleCooking}
+                        cooks.map((cook, index) => <Cook
+                            key={index}
+                            cookPlace={cook}
+                            index={index}
+                            handleCooking={handleCooking}
                         ></Cook>)
                     }
                 </div>
@@ -66,9 +49,9 @@ const CookData = ({ cooks }) => {
                 </table>
                 <div>
                     {
-                        cooking.map((cookPrepare, index) => <Cooking
+                        cooking.map((cook, index) => <Cooking
+                            cook={cook}
                             key={index}
-                            cookPrepare={cookPrepare}
                             index={index}
                         ></Cooking>)
                     }
@@ -79,7 +62,9 @@ const CookData = ({ cooks }) => {
 };
 
 CookData.propTypes = {
-    cooks: PropTypes.array.isRequired
+    cooks: PropTypes.array.isRequired,
+    handleCooking: PropTypes.func.isRequired,
+    cooking: PropTypes.array.isRequired
 };
 
 export default CookData;

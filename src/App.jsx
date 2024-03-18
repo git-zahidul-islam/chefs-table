@@ -9,18 +9,25 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [cooks,setCooks] = useState([])
+  const [cooks, setCooks] = useState([])
+  const [cooking, setCooking] = useState([]);
 
   const handleCook = (cook) => {
     const isExist = cooks.find((c) => c.id == cook.id)
-    if(!isExist){
-      setCooks([...cooks,cook])
+    if (!isExist) {
+      setCooks([...cooks, cook])
     }
-    else{
+    else {
       toast.error("Don't Double click")
     }
   }
 
+  const handleCooking = (cookItem, id) => {
+    setCooking([...cooking,cookItem])
+    // remove preparing cook
+    const remainingCook = cooks.filter(cook => cook.id !== id)
+    setCooks(remainingCook)
+  }
 
   return (
     <>
@@ -39,7 +46,11 @@ function App() {
             <Recipes handleCook={handleCook}></Recipes>
           </div>
           <div className='lg:w-2/5 w-full border-2 rounded-2xl'>
-            <CookData cooks={cooks}></CookData>
+            <CookData
+              cooks={cooks}
+              handleCooking={handleCooking}
+              cooking={cooking}
+            ></CookData>
           </div>
         </div>
       </div>

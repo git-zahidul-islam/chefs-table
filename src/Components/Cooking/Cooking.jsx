@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 
-const Cooking = ({ cookPrepare , index }) => {
-    const { calories, preparing_time, recipe_name } = cookPrepare
+const Cooking = ({cook , index}) => {
+    const { recipe_name, preparing_time, calories } = cook
+    
     return (
         <div>
             <table className="w-full">
@@ -19,8 +20,8 @@ const Cooking = ({ cookPrepare , index }) => {
 };
 
 Cooking.propTypes = {
-    cookPrepare: PropTypes.object.isRequired,
-    index: PropTypes.number.isRequired
+    cook: PropTypes.object.isRequired,
+    index: PropTypes.number
 };
 
 export default Cooking;

@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { useEffect, useState } from "react";
 import Recipe from "../Recipe/Recipe";
@@ -11,7 +11,7 @@ const Recipes = ({ handleCook }) => {
             try {
                 const res = await fetch('/data.json')
                 const data = await res.json()
-                console.log(data)
+                // console.log(data)
                 setRecipes(data)
             } catch (error) {
                 console.log('you are not getting data', error)
@@ -37,7 +37,7 @@ const Recipes = ({ handleCook }) => {
 };
 
 Recipes.propTypes = {
-
+    handleCook: PropTypes.func 
 };
 
 export default Recipes;
