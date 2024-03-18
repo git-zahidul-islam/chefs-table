@@ -9,10 +9,10 @@ const Banner = () => {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-3xl">
                         <h1 className="mb-5 lg:text-5xl md:text-4xl text-3xl font-bold">Discover an exceptional cooking class tailored for you!</h1>
-                        <p className="mb-5">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+                        <p className="mb-5 font-normal text-lg text-white">Welcome to the kingdom of collective food.You will get more than 120+ foods from us.You can come to eat your favorite food ,And you can bring your classmates</p>
                         <div className='flex gap-6 justify-center'>
-                            <button className="btn rounded-full bg-[#0BE58A] border-none">Explore Now</button>
-                            <button className="btn rounded-full bg-transparent text-white border-[1px] border-[#FFFFFF]">Our Feedback</button>
+                            <button className="btn rounded-full bg-[#0BE58A] border-none font-semibold text-xl">Explore Now</button>
+                            <button className="btn rounded-full bg-transparent text-white border-[1px] border-[#FFFFFF] font-semibold text-xl">Our Feedback</button>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ function App() {
   }
 
   const handleCooking = (cookItem, id) => {
-    setCooking([...cooking,cookItem])
+    setCooking([...cooking, cookItem])
     // remove preparing cook
     const remainingCook = cooks.filter(cook => cook.id !== id)
     setCooks(remainingCook)
@@ -37,7 +37,7 @@ function App() {
         <div>
           <div className='flex flex-col items-center space-y-4'>
             <h1 className="text-center lg:text-4xl md:text-4xl text-2xl font-semibold">Our Recipes</h1>
-            <p className="max-w-2xl text-center">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque.</p>
+            <p className="max-w-2xl text-center text-[#150B2B99] text-base font-normal">Welcome to the world of recipes full of tests, You will find food here beyond imagination.So what's the delay come with your well wisher</p>
           </div>
         </div>
         {/* recipe & cook */}
